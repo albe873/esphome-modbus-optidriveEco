@@ -297,6 +297,8 @@ sensor:
     value_type: U_WORD
     skip_updates: 1800
     register_count: 3
+    filters:
+      - multiply: 0.01
 
   # r Running Time - Hours
   # total running time (hours)
