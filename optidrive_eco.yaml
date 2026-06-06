@@ -295,7 +295,7 @@ sensor:
     register_type: read
     address: 31
     value_type: U_WORD
-    skip_updates: 1800
+    skip_updates: 30
     register_count: 3
     filters:
       - multiply: 0.1
@@ -313,7 +313,7 @@ sensor:
     register_type: read
     address: 33
     value_type: U_WORD
-    skip_updates: 1800
+    skip_updates: 30
 
   # r Running Time - Min & Sec
   # total running time (Min & Sec)
