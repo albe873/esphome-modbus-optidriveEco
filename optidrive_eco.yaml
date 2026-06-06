@@ -287,7 +287,7 @@ sensor:
   - platform: modbus_controller
     modbus_controller_id: modbuscontr1
     name: "kWh meter"
-    accuracy_decimals: 0
+    accuracy_decimals: 1
     device_class: energy
     state_class: total_increasing
     unit_of_measurement: kWh
@@ -298,7 +298,7 @@ sensor:
     skip_updates: 1800
     register_count: 3
     filters:
-      - multiply: 0.01
+      - multiply: 0.1
 
   # r Running Time - Hours
   # total running time (hours)
